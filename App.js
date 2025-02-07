@@ -3,7 +3,8 @@
 //     {id:"heading", xyz:"abc"}, //attribute
 //     "Hello from React!" //child
 // );
-
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
 const parent = React.createElement(
     "div",
