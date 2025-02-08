@@ -1,7 +1,7 @@
-4304
+4308
 92C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\type-fest\ts41\kebab-case.d.ts133833075147382820 0
 116C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\@parcel\workers\test\integration\workerfarm\logging.js133833075156870335 0
-79C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\@msgpackr-extract133833985571261548 1
+79C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\@msgpackr-extract133833986866041673 1
 79C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\commander\typings133833075165202602 1
 90C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\@swc\helpers\cjs\_update.cjs133833075152038085 0
 98C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\lmdb\dependencies\lz4\lib\lz4frame.h133833075161166397 0
@@ -12,9 +12,9 @@
 87C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\lines-and-columns\LICENSE133833075142419873 0
 88C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\@parcel\optimizer-svgo\src133833075164036833 1
 97C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\@parcel\core\test\fixtures\main-mjs133833075178564052 1
-61C:\Users\Prathamesh Magdum\Desktop\Namaste-React\package.json133833986866072853 0
+61C:\Users\Prathamesh Magdum\Desktop\Namaste-React\package.json133834960204135034 0
 109C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\posthtml\node_modules\domutils\lib\traversal.js133833075171035079 0
-53C:\Users\Prathamesh Magdum\Desktop\Namaste-React\dist133833996987917439 1
+53C:\Users\Prathamesh Magdum\Desktop\Namaste-React\dist133835073631915111 1
 76C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\domelementtype133833075145005602 1
 83C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\@parcel\markdown-ansi133833075146090246 1
 109C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\caniuse-lite\data\features\css-cascade-scope.js133833075153407689 0
@@ -30,7 +30,7 @@
 68C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\@babel133833075138923884 1
 92C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\@parcel\core\src\Dependency.js133833075171409035 0
 91C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\@parcel\utils\src\Deferred.js133833075166940358 0
-55C:\Users\Prathamesh Magdum\Desktop\Namaste-React\App.js133833996978187690 0
+55C:\Users\Prathamesh Magdum\Desktop\Namaste-React\App.js133835073509043848 0
 99C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\caniuse-lite\data\features\ac3-ec3.js133833075145262874 0
 88C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\semver\functions\coerce.js133833075153729156 0
 94C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\@parcel\source-map\dist\utils.js133833075158658771 0
@@ -44,14 +44,14 @@
 120C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\intro.doc133833075159777283 0
 75C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\color-convert133833075144639445 1
 80C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\parse-json\license133833075142459393 0
-59C:\Users\Prathamesh Magdum\Desktop\Namaste-React\index.html133833996652238096 0
+59C:\Users\Prathamesh Magdum\Desktop\Namaste-React\index.html133835073630802062 0
 111C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mtest3.c133833075158614976 0
 78C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\dotenv\README.md133833075155683211 0
 108C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\caniuse-lite\data\features\array-find-index.js133833075148848430 0
 70C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\posthtml133833075149248367 1
 80C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\domhandler\LICENSE133833075142595301 0
 120C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\@swc\helpers\_\_class_apply_descriptor_update\package.json133833075155710577 0
-58C:\Users\Prathamesh Magdum\Desktop\Namaste-React\index.css133832208564948368 0
+58C:\Users\Prathamesh Magdum\Desktop\Namaste-React\index.css133834990584003911 0
 98C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\posthtml\node_modules\dom-serializer133833075170952375 1
 93C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\dom-serializer\lib\esm\index.js133833075144219758 0
 66C:\Users\Prathamesh Magdum\Desktop\Namaste-React\package-lock.json133833986867194022 0
@@ -78,7 +78,7 @@
 91C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\htmlnano\lib\presets\safe.cjs133833075150948553 0
 138C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-optional-packages-test.cmd133833075461775187 0
 92C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\js-yaml\lib\schema\failsafe.js133833075145372016 0
-67C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\@lmdb133833985571261548 1
+67C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\@lmdb133833986866041673 1
 114C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\scheduler\cjs\scheduler-unstable_mock.development.js133833985565780707 0
 83C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\msgpackr\iterators.js133833075158602711 0
 115C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\@parcel\runtime-js\lib\helpers\browser\wasm-loader.js133833075161659991 0
@@ -104,7 +104,7 @@
 123C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\caniuse-lite\data\features\mdn-css-backdrop-pseudo-element.js133833075161740474 0
 91C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\@parcel\runtime-react-refresh133833075160227259 1
 110C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\@parcel\core\lib\requests\WriteBundlesRequest.js133833075178313968 0
-66C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\@swc133833985571261548 1
+66C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\@swc133833986865988987 1
 105C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\@parcel\compressor-raw\src\RawCompressor.js133833075165060070 0
 70C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\argparse133833075145079037 1
 68C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\braces133833075145306228 1
@@ -2332,6 +2332,7 @@
 104C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\entities\lib\esm\decode_codepoint.d.ts.map133833075147427163 0
 92C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\@swc\helpers\scripts\errors.js133833075154537003 0
 98C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\entities\lib\esm\decode_codepoint.js133833075143655537 0
+72C:\Users\Prathamesh Magdum\Desktop\Namaste-React\dist\index.8d566482.css133834928000913194 0
 123C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\@parcel\package-manager\test\fixtures\packages\peers\index.js133833075182420562 0
 102C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\entities\lib\esm\decode_codepoint.js.map133833075147575996 0
 95C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\@parcel\packager-raw\package.json133833075162934576 0
@@ -3011,6 +3012,7 @@
 116C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\caniuse-lite\data\features\input-autocomplete-onoff.js133833075160181284 0
 103C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\caniuse-lite\data\features\input-color.js133833075160197131 0
 106C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\caniuse-lite\data\features\input-datetime.js133833075160211495 0
+71C:\Users\Prathamesh Magdum\Desktop\Namaste-React\dist\index.9ca8ba10.js133834928000925856 0
 111C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\caniuse-lite\data\features\input-email-tel-url.js133833075160237736 0
 103C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\caniuse-lite\data\features\input-event.js133833075160263969 0
 103C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\@parcel\transformer-posthtml\package.json133833075160064905 0
@@ -4297,9 +4299,11 @@
 77C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\.bin\semver.ps1133833075461750269 0
 89C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\.bin\update-browserslist-db133833075461710116 0
 93C:\Users\Prathamesh Magdum\Desktop\Namaste-React\node_modules\.bin\update-browserslist-db.cmd133833075461697476 0
-71C:\Users\Prathamesh Magdum\Desktop\Namaste-React\dist\index.7826abd7.js133833996985287305 0
-75C:\Users\Prathamesh Magdum\Desktop\Namaste-React\dist\index.7826abd7.js.map133833996985446553 0
-72C:\Users\Prathamesh Magdum\Desktop\Namaste-React\dist\index.9e4c6fd2.css133833996985163630 0
-76C:\Users\Prathamesh Magdum\Desktop\Namaste-React\dist\index.9e4c6fd2.css.map133833996985215906 0
-64C:\Users\Prathamesh Magdum\Desktop\Namaste-React\dist\index.html133833996987917439 0
+71C:\Users\Prathamesh Magdum\Desktop\Namaste-React\dist\index.7826abd7.js133835073510632789 0
+75C:\Users\Prathamesh Magdum\Desktop\Namaste-React\dist\index.7826abd7.js.map133835073510746502 0
+76C:\Users\Prathamesh Magdum\Desktop\Namaste-React\dist\index.8d566482.css.map133834928001100492 0
+75C:\Users\Prathamesh Magdum\Desktop\Namaste-React\dist\index.9ca8ba10.js.map133834928001111498 0
+72C:\Users\Prathamesh Magdum\Desktop\Namaste-React\dist\index.9e4c6fd2.css133834990585002860 0
+76C:\Users\Prathamesh Magdum\Desktop\Namaste-React\dist\index.9e4c6fd2.css.map133834990585098683 0
+64C:\Users\Prathamesh Magdum\Desktop\Namaste-React\dist\index.html133835073631903012 0
 83C:\Users\Prathamesh Magdum\Desktop\Namaste-React\dist\Namaste-React.3464ddca.js.map133833986879659746 0
