@@ -1,85 +1,82 @@
-// const heading = React.createElement(
-//     "h1", 
-//     {id:"heading", xyz:"abc"}, //attribute
-//     "Hello from React!" //child
-// );
-
-
-// import React from 'react';
-// import ReactDOM from 'react-dom/client';
-
-// const parent = React.createElement(
-//     "div",
-//     {id:"parent"},
-//     [React.createElement("div", {id:"child"}, 
-//         [React.createElement("h1", {}, "hello from h1 tag"),React.createElement("h2", {}, "hello from h2 tag")]),React.createElement("div", {id:"child"}, 
-//     [React.createElement("h1", {}, "hello from h1 tag"),React.createElement("h2", {}, "hello from h2 tag")])]
-// );
-
-// console.log(parent); //object
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(parent);
-
-// import React from 'react';
-// import ReactDOM from 'react-dom/client';
-
-// React Element :=>
-    // React.createElement => 
-                            // Creates object => 
-                                                // object get render in DOM => 
-                                                                                    // and displays the HTML
-
-// const heading = React.createElement("h1",{id:"heading"},"Namaste React 🚀"); 
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(heading);
-
-
-// JSX => Is like HTML like syntax or like XML syntax
-// JSX => Jsx code transpiled / compiled by (Parcel -> Babel) into React.createElement => 
-                                                            // Creates JS object => 
-                                                                            // object get render in DOM => 
-                                                                                            // Displays HTML
-
-// const heading = <h1>Namaste JSX 🚀</h1>
-// console.log(heading);
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(heading);
-
-
-// Functional Component
-
-// const Title =() =>{
-//     return <div id="container">
-//         <h1 id="heading">Namaste React 🚀</h1>
-//     </div>
-// };
-
-
-// const HeadingFunc2 =() =>(
-//     <div id="container">
-//         <Title/>
-//         <h1 id="heading">Namaste function</h1>
-//     </div>
-// );
-
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(<HeadingFunc2/>);
-
-
-import React from 'react';
+import React from "react";
 import ReactDOM from 'react-dom/client';
 
-const Header =() =>(
-   <div id="container">
-         <div className='flex items-center justify-between p-4 bg-blue-600 text-white shadow-md'>My logo</div>
-         <input 
-            className='ml-2 px-3 py-2 w-1/3 rounded-full focus:outline-none text-black' 
-            type='text' 
-            placeholder='search'
-         />
-         <div className='icon'>User Icon</div>
-   </div>
-);
- const root = ReactDOM.createRoot(document.getElementById("root"));
- root.render(<Header/>);
 
+/********
+ * Header
+ * -logo
+ * -nav item
+ * Body
+ * -search
+ * -Restaurant Container
+ *  - restaurant card
+ * Footer
+ * -contact
+ * -address
+ * -links
+ */
+
+const Header = () => {
+    return (
+        <div className="header">
+            <div className="logo-container">
+                <img 
+                className="logo" 
+                src="https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png?nwm=1&nws=1&industry=fast-food&sf=&txt_keyword=All"
+                />
+            </div>
+            <div className="nav-items">
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Cart</li>
+                </ul>
+            </div>
+
+        </div>
+    )
+}
+const RestaurantCard = () =>{
+    return(
+        <div className="res-card" style={{background:"#f0f0f0"}}>
+            <img 
+            className="res-logo"
+            alt="res-logo"
+            src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/ymjvq1ewa4tnzbpmqnip"/>
+            <h4>Prathamesh's Biryani</h4>
+        </div>
+    )
+
+}
+const Body = () =>{
+    return (
+        <div className="body">
+            <div className="search">
+                search
+
+            </div>
+            <div className="res-container">
+                <RestaurantCard/>
+            </div>
+
+        </div>
+    )
+}
+
+
+
+const AppLayout = () => {
+    return (
+        <div className="app">
+            <Header/>
+            <Body/>
+        </div>
+    )
+}
+
+
+
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<AppLayout/>);
