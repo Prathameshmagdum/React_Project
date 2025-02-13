@@ -39,27 +39,29 @@ const Header = () => {
 }
 const RestaurantCard = () =>{
     return(
-        <div className="res-card" style={{background:"#f0f0f0"}}>
+        <div className="res-card" style={{backgroundColor:"#f0f0f0"}}>
             <img 
             className="res-logo"
             alt="res-logo"
-            src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/ymjvq1ewa4tnzbpmqnip"/>
+            src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/ymjvq1ewa4tnzbpmqnip"
+            />
             <h4>Prathamesh's Biryani</h4>
+            <h5>cuisine, asian, hyderabadi</h5>
+            <h6>5 star</h6>
+            <h6>30 minutes</h6>
         </div>
-    )
-
-}
+    );
+};
 const Body = () =>{
     return (
         <div className="body">
             <div className="search">
                 search
-
             </div>
             <div className="res-container">
                 <RestaurantCard/>
+                <RestaurantCard/>
             </div>
-
         </div>
     )
 }
