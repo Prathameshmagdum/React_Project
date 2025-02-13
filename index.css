@@ -23,16 +23,17 @@
     margin: 5px;
     padding: 5px;
     width: 200px;
-    height: 300px;
-    overflow-y: scroll;
+    /* height: 350px; */
+    /* overflow-y: scroll; */
 }
 .res-card:hover {
     cursor: pointer;
     border: 1px solid black;
 }
 .search {
-    padding: 5px;
+    padding: 10px;
 }
 .res-logo {
+    height: 42%;
     width: 100%;
 }
