@@ -86,4 +86,17 @@ const Header =() =>(
  root.render(<Header/>);
 
 
-
+#Namaste Food
+/********
+ * Header
+ * -logo
+ * -nav item
+ * Body
+ * -search
+ * -Restaurant Container
+ *  - restaurant card
+ * Footer
+ * -contact
+ * -address
+ * -links
+ */
