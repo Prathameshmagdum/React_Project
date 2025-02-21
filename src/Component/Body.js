@@ -12,25 +12,29 @@ const Body = () =>{
 
     const fetchData = async ()=>{
         const data = await fetch (
-            "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&collection=83639&tags=layout_CCS_Biryani&sortBy=&filters=&type=rcv2&offset=0&page_type=null"
+            "https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.406498&lng=78.47724389999999&collection=83639&tags=layout_CCS_Biryani&sortBy=&filters=&type=rcv2&offset=0&page_type=null"
         );
         const json = await data.json();
         console.log(json);
-        // setRestaurantList();
+        const restList = json?.data?.cards
+            ?.map((card) => card?.card?.card?.info)
+            .filter((info) => info);
+        setRestaurantList(restList);
+        console.log(restList);
     }
 
     return (
         <div className="body">
             <div className="filter">
                 <button className="filter-btn" onClick={()=>{
-                    const filterRes = restaurantList.filter((res)=>res.card.card.info.avgRating>=4);
+                    const filterRes = restaurantList.filter((res)=>res?.data?.card?.card?.info?.avgRating>=4);
                     setRestaurantList(filterRes);
                 }}>
                     Filter The Top Rating Restaurant
                 </button>
             </div>
             <div className="res-container">
-                {restaurantList.map((restuarant) => (<RestaurantCard key={restuarant.card.card.info.id} resData={restuarant}/>))}
+                {restaurantList.map((restuarant) => (<RestaurantCard key={restuarant?.data?.card?.card?.info?.id} resData={restuarant}/>))}
             </div>
         </div>
     )
