@@ -14,7 +14,7 @@ console.log(props);
         cuisines  ,
         avgRating ,
         costForTwo ,
-        deliveryTime,
+        sla,
     } = resData;
 
     return (
@@ -28,7 +28,7 @@ console.log(props);
             <h4>{cuisines?.join(", ")}</h4>
             <h4>Ratings: {avgRating} Stars</h4>
             <h4>Cost: {costForTwo}</h4>
-            <h4>Delivery Time: {deliveryTime} minutes</h4>
+            <h4>Delivery Time: {sla?.slaString}</h4>
         </div>
     );
 };

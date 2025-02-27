@@ -30,9 +30,7 @@
     cursor: pointer;
     border: 1px solid black;
 }
-.search {
-    padding: 10px;
-}
+
 .res-logo {
     height: 42%;
     width: 100%;
@@ -40,6 +38,7 @@
 .filter-btn {
     margin: 10px;
     cursor: pointer;
+    background-color: orange;
 }
 .shimmer-container {
     display: flex;
@@ -57,6 +56,10 @@
     margin: 20px;
 }
 .search{
+    padding: 10px;
+
+}
+.filter{
     display: flex;
     flex-wrap: wrap;
 }
