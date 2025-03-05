@@ -5,7 +5,8 @@ import { MENU_API } from "../utils/constants";
 
 const ResturantMenu =() =>{
     const [resInfo, setResInfo] = useState(null);
-    const { resId } = useParams();
+    const {resId}  = useParams();
+    // console.log(resId);
 
     useEffect(()=>{
         fetchMenu();
@@ -14,15 +15,20 @@ const ResturantMenu =() =>{
     const fetchMenu = async ()=>{
         const data = await fetch(MENU_API + resId)
         const json = await data.json();
-        console.log(json);
-        setResInfo(json.data);
+        // console.log(json);
+        // console.log(resId);
+        setResInfo(json?.data);
     }
     if(resInfo === null) return <Shimmer/>;
+    const restaurantInfo = resInfo?.cards?.find(card => card?.card?.card?.info);
+    const { name, cuisines, costForTwoMessage } = restaurantInfo?.card?.card?.info || {};
 
-    const {name,cuisines,costForTwoMessage} = resInfo?.cards[2]?.card?.card?.info;
-
-    const {itemCards} = resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card;
+    // Extract menu items safely
+    const regularMenu = resInfo?.cards?.find(card => card?.groupedCard?.cardGroupMap?.REGULAR);
+    const menuItems = regularMenu?.groupedCard?.cardGroupMap?.REGULAR?.cards || [];
     // console.log("item",itemCards);
+    const itemCards = menuItems.find(card => card?.card?.card?.itemCards)?.card?.card?.itemCards || [];
+
 
     return (
         <div>

@@ -14,15 +14,15 @@ const Header = () => {
                 />
             </div>
             <div className="nav-items">
-                <ul>
+                <ul >
                     <li>
-                        <Link to="/">Home</Link>
+                        <Link to="/" className="no-underline">Home</Link>
                     </li>
                     <li>
-                        <Link to="/about">About Us</Link>
+                        <Link to="/about" className="no-underline">About Us</Link>
                     </li>
                     <li>
-                        <Link to="/contactus">Contact Us</Link>                    </li>
+                        <Link to="/contactus" className="no-underline">Contact Us</Link>                    </li>
                     <li>Cart</li>
                     <button className="login-logout" onClick={()=> {
                        logAndLogout === 'Login'? setLogAndLogout("Logout"): setLogAndLogout("Login")
