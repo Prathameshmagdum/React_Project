@@ -43,7 +43,7 @@ const Body = () =>{
                         setSearchText(e.target.value);
                      }}
                     />
-                    <button
+                    <button className="search-button"
                      onClick={()=>{
                         console.log(searchText);
                         const filterSearchText = restaurantList.filter(
