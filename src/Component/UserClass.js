@@ -8,10 +8,14 @@ class UserClass extends React.Component{
             count1:1,
         }
         console.log(this.props.name+"Constuctor called");
+
     }
     componentDidMount(){
         console.log(this.props.name+"ComponentDidMount called");
 
+    }
+    componentWillUnmount(){
+        console.log("Parent Component will Unmount");
     }
     render(){
         console.log(this.props.name+"Render called");

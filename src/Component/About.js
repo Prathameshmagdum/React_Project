@@ -1,5 +1,5 @@
 import User from "./User";
-import UserClass from "./UsserClass";
+import UserClass from "./UserClass";
 import React from "react";
 class About extends React.Component{
     constructor(props){
@@ -7,8 +7,15 @@ class About extends React.Component{
         console.log("Patent Constuctor called");
     }
     componentDidMount(){
+        this.timer = setInterval(()=>{
+            console.log("Set Interval calling");
+        }, 1000);
         console.log("Parent ComponentDidMount called");
 
+    }
+    componentWillUnmount(){
+        clearInterval(this.timer);
+        console.log("Child Component will Unmount");
     }
     render(){
         console.log("Patent Render called");
