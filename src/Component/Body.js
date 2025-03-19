@@ -4,13 +4,13 @@ import resList from "../utils/mockData";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () =>{
     const [restaurantList, setRestaurantList] = useState([]);
     const [filteredRestaurant, setFilteredRestaurant] = useState([]);
 
     const [searchText, setSearchText] = useState("");
-
     // Whenever state variables update, react triggers a reconciliation cycle(re-renders the component)
 
     useEffect(()=>{
@@ -30,7 +30,14 @@ const Body = () =>{
         setFilteredRestaurant(restList);
         // console.log(restList);
     }
+    const onlineStatus = useOnlineStatus();
 
+    if(onlineStatus === false)
+        return(
+            <h1>
+                Your'e offline make sure you intenrt is On!!
+            </h1>
+        );
     return restaurantList.length === 0 ? <Shimmer/> : (
         <div className="body">
             <div className="filter">
