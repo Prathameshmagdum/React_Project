@@ -8,39 +8,39 @@ const Header = () => {
     const [logAndLogout, setLogAndLogout] = useState("Login");
     const onlineStatus = useOnlineStatus();
     return (
-        <div className="header">
+        <div className="flex bg-pink-100 justify-between shadow-xl m-2">
             <div className="logo-container">
                <Link to="/"> 
                <img 
-                className="logo" 
+                className="w-36" 
                 src={LOGO_URL}
                 // alt="Logo"
                 />
                 </Link>
             </div>
-            <div className="nav-items">
-                <ul >
-                    <li>
+            <div className="flex items-center">
+                <ul className="flex p-4 m-4">
+                    <li className="px-4">
                         Online Status: {onlineStatus ? "✅" : "❌"}
                     </li>
 
-                    <li>
+                    <li className="px-4">
                         <Link to="/" className="no-underline">Home</Link>
                     </li>
 
-                    <li>
+                    <li className="px-4">
                         <Link to="/about" className="no-underline">About Us</Link>
                     </li>
 
-                    <li>
+                    <li className="px-4">
                         <Link to="/contactus" className="no-underline">Contact Us</Link>                    
                     </li>
 
-                    <li>
+                    <li className="px-4">
                         <Link to="/grocery" className="no-underline">Grocery</Link>                    
                     </li>
 
-                    <li>
+                    <li className="px-4">
                         Cart
                     </li>
 

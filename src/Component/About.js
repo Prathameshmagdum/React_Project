@@ -6,7 +6,9 @@ class About extends React.Component{
         super(props);
         console.log("Patent Constuctor called");
     }
-    componentDidMount(){
+    async componentDidMount(){
+        // const responce = await fetch(`https://api.github.com/users/${Prathameshmagdum}`)
+        // const data = responce.json();
         this.timer = setInterval(()=>{
             console.log("Set Interval calling");
         }, 1000);
@@ -24,9 +26,8 @@ class About extends React.Component{
             <div>
                 <h1>About Us</h1>
                 <h2>Im learning the namaste react from akshay saini thank you!</h2>
+                {/* <p>{data.img}</p> */}
                 <UserClass name={"First Child"} location={"Pimpri-Chinchwad"}/>
-                <UserClass name={"Second Child"} location={"Pimpri-Chinchwad"}/>
-                <UserClass name={"Third Child"} location={"Pimpri-Chinchwad"}/>
             </div>
         )
     }

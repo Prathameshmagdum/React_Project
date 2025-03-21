@@ -7,7 +7,7 @@ import Error from "./Component/Error";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import ContactUs from "./Component/ContactUs";
 import ResturantMenu from "./Component/RestaurantMenu";
-import Shimmer from "./Component/Shimmer";
+// import Shimmer from "./Component/Shimmer";
 
 const Grocery = lazy(()=> import("./Component/Grocery"));
 
