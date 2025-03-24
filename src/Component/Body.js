@@ -1,5 +1,5 @@
 import React from "react";
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, {withPromotedCard} from "./RestaurantCard";
 import resList from "../utils/mockData";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
@@ -12,6 +12,8 @@ const Body = () =>{
 
     const [searchText, setSearchText] = useState("");
     // Whenever state variables update, react triggers a reconciliation cycle(re-renders the component)
+
+    const RestaurantCardPromoted = withPromotedCard(RestaurantCard);
 
     useEffect(()=>{
         fetchData();
@@ -71,10 +73,11 @@ const Body = () =>{
                     </button>
                 </div>
             </div>
-            <div className="flex flex-wrap">
+            <div className="flex flex-row justify-center flex-wrap">
                 {filteredRestaurant.map((restuarant) => (
                     <Link key={restuarant?.id} to={"/restaurant/"+restuarant?.id} className="no-underline">
-                        <RestaurantCard  resData={restuarant}/>
+                        {/* this is a higher order component below here */}
+                        {restuarant?.promoted ?<RestaurantCardPromoted resData={restuarant}/> : <RestaurantCard  resData={restuarant}/>}
                     </Link>
                     ))}
             </div>
