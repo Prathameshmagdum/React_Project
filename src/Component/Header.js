@@ -8,7 +8,7 @@ const Header = () => {
     const [logAndLogout, setLogAndLogout] = useState("Login");
     const onlineStatus = useOnlineStatus();
     return (
-        <div className="flex bg-pink-100 justify-between shadow-xl m-2">
+        <div className="flex bg-blue-200 sm:bg-pink-100 justify-between shadow-xl m-2">
             <div className="logo-container">
                <Link to="/"> 
                <img 
