@@ -24,14 +24,15 @@ const Body = () =>{
             "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9352403&lng=77.624532&collection=83637&tags=layout_CCS_Burger&sortBy=&filters=&type=rcv2&offset=0&page_type=null"
         );
         const json = await data.json();
-        console.log(json);
+        // console.log(json);
         const restList = json?.data?.cards
             ?.map((card) => card?.card?.card?.info)
             .filter((info) => info);
         setRestaurantList(restList);
         setFilteredRestaurant(restList);
-        // console.log(restList);
+        console.log("reslist",json);
     }
+
     const onlineStatus = useOnlineStatus();
 
     if(onlineStatus === false)
