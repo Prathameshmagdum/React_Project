@@ -1,13 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 import ItemsList from "./ItemsList";
  
- const RestaurantCategory = ({data}) =>{
+ const RestaurantCategory = ({data, showIndex, setShowIndex}) =>{
 
-    const [showItems, setShowItems] = useState(false);
+    // what is uncontrolled component
+    // const [showItems, setShowItems] = useState(false);
+    // so basically state will be managed by the child component i.e. RestaurantCategory
+    // and the parent component i.e. RestaurantMenu will not have any control over the state of the child component
+    // so the child component will have its own state and will manage it
+    // so the child component is called uncontrolled component
+    // so to make the child component controlled component we will pass the state and the function to change the state from the parent component
+
+    // so, now we will pass the setShowIndex function as a prop to the child component and the child component will handle the state for controlled component
 
     const handleClick = () => {
         // console.log("clicked");
-        setShowItems(!showItems);
+        // setShowItems(!showItems);
+        setShowIndex();
     }
     // console.log(data);
     return (
@@ -19,7 +28,7 @@ import ItemsList from "./ItemsList";
                 <span className="font-bold text-sm">{data?.title} ({data.itemCards.length})</span>
                 <span>{"⬇️"}</span>
             </div>
-            {showItems && <ItemsList items={data.itemCards}/>}
+            {showIndex && <ItemsList items={data.itemCards}/>}
         </div>
     );
  }

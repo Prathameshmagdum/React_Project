@@ -2,8 +2,10 @@ import Shimmer from "./Shimmer";
 import { useParams } from "react-router-dom";
 import useRestuarantMenu from "../utils/useRestaurantMenu";
 import RestaurantCategory from "./RestaurantCategory";
+import { useState } from "react";
 
 const ResturantMenu =() =>{
+    const [showIndex, setShowIndex] = useState(0);
     // const [resInfo, setResInfo] = useState(null);
     const {resId}  = useParams();
     // console.log(resId);
@@ -41,8 +43,17 @@ const ResturantMenu =() =>{
                 </li>
                 ))}
             </ul> */}
-            {categories?.map((category) => (
-                <RestaurantCategory key={category?.card?.card?.categoryId} data={category?.card?.card} />
+            {categories?.map((category, index) => (
+                // controlled component that we are passing the showIndex and setShowIndex from parent to child to handle the state of the child hide and show
+                // so the parent component will have control over the state of the child component
+                // so the child component is called controlled component.
+                <RestaurantCategory 
+                    key={category?.card?.card?.categoryId} 
+                    data={category?.card?.card} 
+
+                    showIndex={index == showIndex ? true : false}
+                    setShowIndex={()=>{setShowIndex(index)}}
+                />
             ))}
 
         </div>
