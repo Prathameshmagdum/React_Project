@@ -9,7 +9,7 @@ const ResturantMenu =() =>{
     // console.log(resId);
 
     const resInfo = useRestuarantMenu(resId);
-    console.log(resInfo);
+    // console.log(resInfo);
 
     if(resInfo === null) return <Shimmer/>;
     const restaurantInfo = resInfo?.cards?.find(card => card?.card?.card?.info);
@@ -22,7 +22,7 @@ const ResturantMenu =() =>{
     // console.log("accordian",menuItems);
 
     const categories = resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.filter(c => c.card?.["card"]?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory");
-    console.log("r",categories);
+    // console.log("r",categories);
     return (
         <div className="text-center">
             <h1 className="font-bold text-2xl my-6">

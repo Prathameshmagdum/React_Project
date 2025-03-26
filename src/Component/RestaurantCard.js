@@ -3,7 +3,7 @@ import { CDN_URL } from "../utils/constants";
 
 const RestaurantCard = (props) => {
     const { resData } = props;
-    console.log(props);
+    // console.log(props);
     // if (!resData?.card?.card?.info) {
     //     return <div>Loading...</div>;
     // }
