@@ -1,7 +1,10 @@
 import React from "react";
 import { CDN_URL } from "../utils/constants";
+import { useContext } from "react";
+import UserContext from "./UserContext";
 
 const RestaurantCard = (props) => {
+    const {loggedIn} = useContext(UserContext);
     const { resData } = props;
     // console.log(props);
     // if (!resData?.card?.card?.info) {
@@ -29,6 +32,7 @@ const RestaurantCard = (props) => {
             <h4>Ratings: {avgRating} Stars</h4>
             <h4>Cost: {costForTwo}</h4>
             <h4>Delivery Time: {sla?.slaString}</h4>
+            <h4>userName: {loggedIn}</h4>
         </div>
     );
 };

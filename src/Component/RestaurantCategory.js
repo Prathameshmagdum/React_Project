@@ -14,8 +14,7 @@ import ItemsList from "./ItemsList";
     // so, now we will pass the setShowIndex function as a prop to the child component and the child component will handle the state for controlled component
 
     const handleClick = () => {
-        // console.log("clicked");
-        // setShowItems(!showItems);
+        // Toggle the accordion open/close
         setShowIndex();
     }
     // console.log(data);
@@ -33,3 +32,4 @@ import ItemsList from "./ItemsList";
     );
  }
  export default RestaurantCategory;
+ 

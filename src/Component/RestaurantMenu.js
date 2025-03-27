@@ -52,7 +52,7 @@ const ResturantMenu =() =>{
                     data={category?.card?.card} 
 
                     showIndex={index == showIndex ? true : false}
-                    setShowIndex={()=>{setShowIndex(index)}}
+                    setShowIndex={()=>{setShowIndex(index === showIndex ? null : index)}}
                 />
             ))}
 

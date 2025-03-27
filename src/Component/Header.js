@@ -1,13 +1,16 @@
 import React from "react";
 import { LOGO_URL } from "../utils/constants";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "./UserContext";
 
 const Header = () => {
     const [logAndLogout, setLogAndLogout] = useState("Login");
     const onlineStatus = useOnlineStatus();
-    return (
+    const {loggedIn} = useContext(UserContext);
+    console.log(loggedIn);
+        return (
         <div className="flex bg-blue-200 sm:bg-pink-100 justify-between shadow-xl m-2">
             <div className="logo-container">
                <Link to="/"> 
@@ -44,11 +47,14 @@ const Header = () => {
                         Cart
                     </li>
 
-                    <button className="login-logout" onClick={()=> {
+                    <button className="px-4" onClick={()=> {
                        logAndLogout === 'Login'? setLogAndLogout("Logout"): setLogAndLogout("Login")
                     }}>  
                         {logAndLogout}
                     </button>
+                    <li className="px-4 text-lg">
+                        {loggedIn}
+                    </li>
                 </ul>
             </div>
 

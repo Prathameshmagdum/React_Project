@@ -1,12 +1,15 @@
 import React from "react";
 import RestaurantCard, {withPromotedCard} from "./RestaurantCard";
 import resList from "../utils/mockData";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "./UserContext";
 
 const Body = () =>{
+    const {loggedIn,setUserName} = useContext(UserContext);
+    
     const [restaurantList, setRestaurantList] = useState([]);
     const [filteredRestaurant, setFilteredRestaurant] = useState([]);
 
@@ -30,7 +33,7 @@ const Body = () =>{
             .filter((info) => info);
         setRestaurantList(restList);
         setFilteredRestaurant(restList);
-        console.log("reslist",json);
+        // console.log("reslist",json);
     }
 
     const onlineStatus = useOnlineStatus();
@@ -72,13 +75,19 @@ const Body = () =>{
                     }}>
                         Top Restaurant
                     </button>
+                    <div className="px-4">
+                        Change: 
+                        <input className="border border-black px-2"
+                        value={loggedIn}
+                        onChange={(e)=>setUserName(e.target.value)}/>
+                    </div>
                 </div>
             </div>
             <div className="flex flex-row justify-center flex-wrap">
                 {filteredRestaurant.map((restuarant) => (
                     <Link key={restuarant?.id} to={"/restaurant/"+restuarant?.id} className="no-underline">
                         {/* this is a higher order component below here */}
-                        {restuarant?.promoted ?<RestaurantCardPromoted resData={restuarant}/> : <RestaurantCard  resData={restuarant}/>}
+                        {restuarant?.promoted ? <RestaurantCardPromoted resData={restuarant}/> : <RestaurantCard  resData={restuarant}/>}
                     </Link>
                     ))}
             </div>
