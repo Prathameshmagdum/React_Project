@@ -8,6 +8,8 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import ContactUs from "./Component/ContactUs";
 import ResturantMenu from "./Component/RestaurantMenu";
 import UserContext from "./Component/UserContext";
+import { Provider } from "react-redux";
+import appStore from "./utils/appStore";
 // import Shimmer from "./Component/Shimmer";
 
 const Grocery = lazy(()=> import("./Component/Grocery"));
@@ -25,12 +27,14 @@ const AppLayout = () => {
   },[]);
 
     return (
-      <UserContext.Provider value={{loggedIn:userName, setUserName}}>
-        <div className="app">
-            <Header/>
-            <Outlet/>
-        </div>
-      </UserContext.Provider>
+      <Provider store={appStore}>
+        <UserContext.Provider value={{loggedIn:userName, setUserName}}>
+          <div className="app">
+              <Header/>
+              <Outlet/>
+          </div>
+        </UserContext.Provider>
+      </Provider>
     )
 }
 
