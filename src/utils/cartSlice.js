@@ -7,6 +7,7 @@ const cartSlice = createSlice({
     },
     reducers:{
         addItem: (state, action)=>{
+            // mutating the state here means directly modifying the state object
             state.items.push(action.payload);
         },
         removeItem:(state)=>{
