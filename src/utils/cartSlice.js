@@ -8,6 +8,8 @@ const cartSlice = createSlice({
     reducers:{
         addItem: (state, action)=>{
             // mutating the state here means directly modifying the state object
+            // Redux Toolkit uses immer library which allows us to mutate the state directly
+            // and it will take care of creating a new immutable state object for us.
             state.items.push(action.payload);
         },
         removeItem:(state)=>{

@@ -14,7 +14,7 @@ const Header = () => {
 
     //subscribing to the store
     const cartItems = useSelector((store)=> store.cart.items);
-    // console.log(cartItems);
+    console.log(cartItems);
 
         return (
         <div className="flex bg-blue-200 sm:bg-pink-100 justify-between shadow-xl m-2">
@@ -50,7 +50,7 @@ const Header = () => {
                     </li>
 
                     <li className="px-4 font-bold">
-                        Cart - ({cartItems.length} Items)
+                        <Link to="/cart" className="no-underline">Cart - ({cartItems.length} Items)</Link>   
                     </li>
 
                     <button className="px-4" onClick={()=> {

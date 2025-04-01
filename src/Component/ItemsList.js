@@ -6,9 +6,10 @@ const ItemsList = ({items}) =>{
     // console.log("items",items);
     const dispatch = useDispatch();
 
-    const handleAddToCart = () =>{
-        dispatch(addItem("Pizza"));
+    const handleAddToCart = (item) =>{
+        dispatch(addItem(item));
     }
+    
     return(
         <div>
             {items.map((item)=>(
