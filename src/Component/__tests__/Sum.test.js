@@ -1,4 +1,4 @@
-import { Sum } from "../Sum";
+import {Sum} from "../Sum";
 
 test("Calculate the sum funtion to result out the correct addition", ()=>{
     const result = Sum(3,4);
